@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "domoArigato";
+    src: url("./RobotoFont/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "domoArigatoBold";
+    src: url("./RobotoFont/Roboto-Bold.ttf");
+}
+
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows: 2fr 9fr;
+}
+
+p {
+    margin: 0;
+}
+
+.gentrify-img {
+    filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(208deg) brightness(116%) contrast(100%);
+}
+
+.sidebar {
+    color: #FFFFFF;
+    background-color: rgb(25,146,212);
+    grid-row: span 2;
+    font-family: 'domoArigatoBold';
+}
+
+.dashboard {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4.4vw auto;
+}
+
+.butt {
+    padding-bottom: 3vh;
+}
+
+.dash-img {
+    padding-left: .8vw;
+    padding-right: .8vw;
+    padding-top: 2vh;
+}
+
+.dash-text {
+    padding-top: 2vh;
+    font-size: 3.2vh;
+}
+
+.head {
+    padding-top: 2vh;
+}
+
+.bigHead {
+    padding-top: 7vh;
+}
+
+.nav-img {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.nav-text {
+    font-size: 2vh;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    box-shadow: 5px 5px 5px lightgray;
+    z-index: 10;
+}
+
+.searchGrid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4vw auto;
+    padding-top: 1vh;
+    padding-right: 1vw;
+    font-family: 'domoArigato';
+    font-size: 1vh;
+    margin-bottom: 1vh;
+}
+
+.search-img {
+    padding: .2vh .8vw 0 2vw;
+}
+
+#searchBar {
+    padding: .3vw;
+    border-radius: 12px;
+    border: 0px;
+    outline: none;
+    background-color: rgb(226,232,240);
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    font-family: 'domoArigatoBold';
+}
+
+.welcome-img {
+    width: 11vh;
+    height: 11vh;
+    grid-row: span 2;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2vh 0 1.5vh 2vw;
+}
+
+.itsaMe {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-hi {
+    font-size: 1.4vh;
+    margin-top: 5vh;
+}
+
+.welcome-nem {
+    margin-top: 1vh;
+    font-size: 2vh;
+}
+
+.buttonBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15%;
+    margin-left: auto;
+    margin-right: 2vw;
+    padding-right: 10%;
+    align-items: center;
+}
+
+button {
+    color: #FFFFFF;
+    font-size: 1.8vh;
+    background-color: rgb(25,146,212);
+    padding: .4vw 1.6vw;
+    margin: 0;
+    border: 0;
+    border-radius: 18px;
+}
+
+.topRight {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: right;
+    gap: 1.4vw;
+    padding-right: 3vw;
+}
+
+.miniAvatar {
+    width: 3.5vh;
+    height: 3.5vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bell {
+    width: 2vh;
+    height: auto;
+}
+
+.miniNem {
+    font-family: "domoArigatoBold";
+    font-size: 2vh;
+    padding-right: 2vw;
+}
+
+.main-content {
+    background-color: rgb(226,232,240);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 1.6vw 1vw;
+    gap: 1vw;
+}
+
+.tittle {
+    font-family: 'domoArigatoBold';
+    font-size: 1vw;
+    margin-bottom: .5vw;
+}
+
+div.projectsAnnounce {
+    grid-row: span 2;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.2vw 1vw;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.subAnnounce {
+    font-family: 'domoArigatoBold';
+    font-size: 1.5vh;
+}
+
+.announceText {
+    font-family: 'domoArigato';
+    font-size: 1vh;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 1vw;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: .8vw;
+}
+
+h3 {
+    font-family: 'domoArigatoBold';
+    margin: 0;
+}
+
+.projectText {
+    font-family: 'domoArigato';
+    font-size: 1.2vh;
+    margin-bottom: 1vw;
+}
+
+.projectIcon {
+    display: grid;
+    grid-template-columns: 1vw 1vw 1vw;
+    gap: 1vw;
+    justify-content: right;
+}
+
+.projectIconic {
+    width: 1vw;
+    height: auto;
+}
+
+.subProject {
+    display: grid;
+    grid-template-columns: 0.3vw auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.yeller {
+    background-color: rgb(240,180,41);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+}
+
+.subProjectText {
+    padding: 1.2vw 1vw;
+}
+
+/*div {border: 1px solid rgb(240,180,41);}
